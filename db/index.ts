@@ -4,7 +4,7 @@ import { neon } from '@neondatabase/serverless'
 
 import * as schema from './schema'
 
-export const db = process.env.VERCEL
+export const db = process.env.vercel
   ? drizzleNeon({
       client: neon(process.env.DATABASE_URL!),
       schema,
